@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SortViz</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #3f71af7b;
+            color: white;
+        }
+
+        header {
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: rgba(89, 6, 255, 0.703);
+            padding: 10px;
+
+            border: 1px solid rgba(128, 9, 240, 0.511);
+            border-radius: 4px;
+
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn:active {
+            opacity: 0.8;
+        }
+
+        /* selectors */
+        .banner-text {
+            text-align: center;
+            width: 50%;
+            margin-inline: auto;
+            background-color: rgba(129, 126, 126, 0.789);
+            padding: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.484);
+            border-radius: 4px;
+        }
+
+        .banner-text:hover {
+            cursor: default;
+        }
+
+        .main {
+            background-color: #e9ddddca;
+            width: 80%;
+            margin-block: 20px;
+            margin-inline: auto;
+            padding: 10px;
+        }
+
+        .sub-main {
+            flex-direction: column;
+            gap: 4px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <h1 class="banner-text">Learn Sorting algos</h1>
+
+    </header>
+    <div class="main">
+        <ul class="sub-main flex">
+            <li>
+                <a href="views/bubble.html">
+                    <button class="btn">Bubble Sort</button>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <button class="btn" title="This is not completed yet"><strike>Selection Sort</strike></button>
+                </a>
+
+            </li>
+            <li>
+                <a href=""><button class="btn" title="This is not completed yet"><strike>Insertion Sort</strike></button></a>
+            </li>
+        </ul>
+    </div>
 </body>
+
 </html>
